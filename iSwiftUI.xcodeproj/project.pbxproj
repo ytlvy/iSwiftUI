@@ -11,6 +11,11 @@
 		84B5635F2A55B84B00B26973 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5635E2A55B84B00B26973 /* ContentView.swift */; };
 		84B563612A55B84C00B26973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B563602A55B84C00B26973 /* Assets.xcassets */; };
 		84B563642A55B84C00B26973 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B563632A55B84C00B26973 /* Preview Assets.xcassets */; };
+		84B5636B2A5707D700B26973 /* animateTest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5636A2A5707D700B26973 /* animateTest1.swift */; };
+		84B5636D2A5905E000B26973 /* BezierPanth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5636C2A5905E000B26973 /* BezierPanth.swift */; };
+		84B5636F2A59066200B26973 /* Figures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5636E2A59066200B26973 /* Figures.swift */; };
+		84B563722A59946A00B26973 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B563712A59946A00B26973 /* List.swift */; };
+		84B563782A5A53B900B26973 /* LookinServer in Frameworks */ = {isa = PBXBuildFile; productRef = 84B563772A5A53B900B26973 /* LookinServer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		84B5635E2A55B84B00B26973 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84B563602A55B84C00B26973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B563632A55B84C00B26973 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84B5636A2A5707D700B26973 /* animateTest1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animateTest1.swift; sourceTree = "<group>"; };
+		84B5636C2A5905E000B26973 /* BezierPanth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierPanth.swift; sourceTree = "<group>"; };
+		84B5636E2A59066200B26973 /* Figures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figures.swift; sourceTree = "<group>"; };
+		84B563712A59946A00B26973 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B563782A5A53B900B26973 /* LookinServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +63,9 @@
 			children = (
 				84B5635C2A55B84B00B26973 /* iSwiftUIApp.swift */,
 				84B5635E2A55B84B00B26973 /* ContentView.swift */,
+				84B5636A2A5707D700B26973 /* animateTest1.swift */,
+				84B563712A59946A00B26973 /* List.swift */,
+				84B563702A59067500B26973 /* Bezier */,
 				84B563602A55B84C00B26973 /* Assets.xcassets */,
 				84B563622A55B84C00B26973 /* Preview Content */,
 			);
@@ -65,6 +78,15 @@
 				84B563632A55B84C00B26973 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84B563702A59067500B26973 /* Bezier */ = {
+			isa = PBXGroup;
+			children = (
+				84B5636C2A5905E000B26973 /* BezierPanth.swift */,
+				84B5636E2A59066200B26973 /* Figures.swift */,
+			);
+			path = Bezier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = iSwiftUI;
+			packageProductDependencies = (
+				84B563772A5A53B900B26973 /* LookinServer */,
+			);
 			productName = iSwiftUI;
 			productReference = 84B563592A55B84B00B26973 /* iSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 84B563502A55B84B00B26973;
+			packageReferences = (
+				84B563762A5A53B900B26973 /* XCRemoteSwiftPackageReference "LookinServer" */,
+			);
 			productRefGroup = 84B5635A2A55B84B00B26973 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B5636D2A5905E000B26973 /* BezierPanth.swift in Sources */,
+				84B5636F2A59066200B26973 /* Figures.swift in Sources */,
+				84B5636B2A5707D700B26973 /* animateTest1.swift in Sources */,
 				84B5635F2A55B84B00B26973 /* ContentView.swift in Sources */,
 				84B5635D2A55B84B00B26973 /* iSwiftUIApp.swift in Sources */,
+				84B563722A59946A00B26973 /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84B563762A5A53B900B26973 /* XCRemoteSwiftPackageReference "LookinServer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QMUI/LookinServer/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84B563772A5A53B900B26973 /* LookinServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B563762A5A53B900B26973 /* XCRemoteSwiftPackageReference "LookinServer" */;
+			productName = LookinServer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84B563512A55B84B00B26973 /* Project object */;
 }

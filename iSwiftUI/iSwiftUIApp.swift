@@ -11,7 +11,7 @@ import SwiftUI
 struct iSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BezierContentView()
         }
     }
 }
